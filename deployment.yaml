@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginxapp
+  name: reactapp
 spec:
   selector:
     matchLabels:
-      app: nginxapp
+      app: reactapp
   template:
     metadata:
       labels:
-        app: nginxapp
+        app: reactapp
     spec:
       containers:
-      - name: nginxapp
-        image: demisto/flask-nginx:1.0.0.2027021
+      - name: reactapp
+        image: nischalgenese/react:latest
         resources:
           limits:
             memory: "128Mi"
