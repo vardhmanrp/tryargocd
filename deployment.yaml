@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reactapp
+  name: jenkins_deploy
 spec:
   selector:
     matchLabels:
-      app: reactapp
+      app: jenkins
   template:
     metadata:
       labels:
-        app: reactapp
+        app: jenkins
     spec:
       containers:
-      - name: reactapp
-        image: nischalgenese/react:latest
+      - name: jenkins
+        image: jenkins/jenkins:latest-jdk17
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: 3000
+        - containerPort: 8080
