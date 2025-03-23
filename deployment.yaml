@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: jenkins/jenkins:latest-jdk17
+        image: jenkins/jenkins:lts-jdk17
         resources:
           limits:
             memory: "4096Mi"
