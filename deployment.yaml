@@ -16,7 +16,7 @@ spec:
         image: jenkins/jenkins:latest-jdk17
         resources:
           limits:
-            memory: "2048Mi"
-            cpu: "1000m"
+            memory: "4096Mi"
+            cpu: "5000m"
         ports:
         - containerPort: 8080
