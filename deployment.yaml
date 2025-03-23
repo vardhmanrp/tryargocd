@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: nginxapp
-        image: nginx:latest
+        image: demisto/flask-nginx:1.0.0.2027021
         resources:
           limits:
             memory: "128Mi"
