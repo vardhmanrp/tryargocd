@@ -1,0 +1,2 @@
+# tryargocd
+argocd example
